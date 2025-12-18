@@ -40,7 +40,7 @@ export const products = [
       bricksPerSqm: 60,
       type: 'macizo',
       resistance: 'alta',
-      weightPerBrickKg: 2.5, // Example weight
+      weightPerBrickKg: 2.5, // Peso de ejemplo
       waterAbsorption: '12%',
       compressionResistance: '20 MPa',
       thermalInsulation: '0.6 W/mK',
@@ -52,7 +52,7 @@ export const products = [
       bricksPerSqm: 45,
       type: 'perforado',
       resistance: 'media',
-      weightPerBrickKg: 1.8, // Example weight
+      weightPerBrickKg: 1.8, // Peso de ejemplo
       waterAbsorption: '15%',
       compressionResistance: '15 MPa',
       thermalInsulation: '0.5 W/mK',
@@ -64,7 +64,7 @@ export const products = [
       bricksPerSqm: 10,
       type: 'bloque',
       resistance: 'media',
-      weightPerBrickKg: 5.0, // Example weight
+      weightPerBrickKg: 5.0, // Peso de ejemplo
       waterAbsorption: '10%',
       compressionResistance: '10 MPa',
       thermalInsulation: '0.4 W/mK',
@@ -75,10 +75,10 @@ export const products = [
         description: 'Tradición y durabilidad para cubiertas con estilo.',
         bricksPerSqm: null,
         type: 'teja',
-        resistance: 'baja', // Resistance to impact, not structural
-        weightPerBrickKg: 0.8, // Example weight for a tile
+        resistance: 'baja', // Resistencia al impacto, no estructural
+        weightPerBrickKg: 0.8, // Peso de ejemplo para una teja
         waterAbsorption: '8%',
-        compressionResistance: 'NA', // Not applicable for structural resistance
+        compressionResistance: 'NA', // No aplicable para resistencia estructural
         thermalInsulation: '0.8 W/mK',
     }
 ];
@@ -102,7 +102,7 @@ export const projects = [
     }
 ];
 
-export const socialLinks = [ // Reusing for consistency, though content might change
+export const socialLinks = [ // Reutilizando para consistencia, aunque el contenido podría cambiar
     { href: '#', icon: 'Instagram', name: 'Instagram' },
     { href: '#', icon: 'Facebook', name: 'Facebook' },
     { href: '#', icon: 'Twitter', name: 'Twitter' },
@@ -111,33 +111,33 @@ export const socialLinks = [ // Reusing for consistency, though content might ch
 export const contactInfo = {
     plantLocation: 'Av. Ladrillera 456, Parque Industrial, Ciudad',
     wholesalePhone: '+1 (555) 123-4567',
-    whatsappNumber: '5491123456789', // Example WhatsApp number (Argentina format)
+    whatsappNumber: '5491123456789', // Número de WhatsApp de ejemplo (formato Argentina)
 };
 
 export const partners = [
     {
         name: 'Constructora A',
-        logo: 'https://via.placeholder.com/150x80?text=Constructora+A', // Placeholder image
+        logo: 'https://via.placeholder.com/150x80?text=Constructora+A', // Imagen de marcador de posición
     },
     {
         name: 'Arquitectos B',
-        logo: 'https://via.placeholder.com/150x80?text=Arquitectos+B', // Placeholder image
+        logo: 'https://via.placeholder.com/150x80?text=Arquitectos+B', // Imagen de marcador de posición
     },
     {
         name: 'Ingeniería C',
-        logo: 'https://via.placeholder.com/150x80?text=Ingenieria+C', // Placeholder image
+        logo: 'https://via.placeholder.com/150x80?text=Ingenieria+C', // Imagen de marcador de posición
     },
     {
         name: 'Desarrollos D',
-        logo: 'https://via.placeholder.com/150x80?text=Desarrollos+D', // Placeholder image
+        logo: 'https://via.placeholder.com/150x80?text=Desarrollos+D', // Imagen de marcador de posición
     },
 ];
 
 export const brickTypesForCalculator = products
-    .filter(p => p.bricksPerSqm !== null) // Filter out tiles or products not for square meter calculation
+    .filter(p => p.bricksPerSqm !== null) // Filtrar tejas o productos no para cálculo por metro cuadrado
     .map(p => ({
         name: p.name,
         bricksPerSqm: p.bricksPerSqm,
         weightPerBrickKg: p.weightPerBrickKg,
-        image: p.image // Include image path
+        image: p.image // Incluir ruta de imagen
     }));
