@@ -111,7 +111,7 @@ export const socialLinks = [ // Reutilizando para consistencia, aunque el conten
 export const contactInfo = {
     plantLocation: 'Av. Ladrillera 456, Parque Industrial, Ciudad',
     wholesalePhone: '+58 41297003115',
-    whatsappNumber: '+5841297003115', // Número de WhatsApp
+    whatsappNumber: '5841297003115', // Número de WhatsApp
 };
 
 export const partners = [
